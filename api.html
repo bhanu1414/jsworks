@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+    <link rel="stylesheet" href="api.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        
+    </div>
+
+    <script>
+        let cards = document.querySelectorAll(".box");
+
+        async function getData(){
+
+            let responce = await fetch("https://dummyjson.com/products")
+            let data = await responce.json()
+            //console.log(data)
+
+            console.log(data.products)
+
+            cards.forEach((element,i)=>{
+                element.getElementsByTagName("img")[0].src=data.products[i].images[0];
+                element.getElementsByTagName("h2")[0].innerHTML=("Brand:"+data.products[i].brand);
+                element.getElementsByTagName("h1")[0].innerHTML=("$:"+data.products[i].price);
+                element.getElementsByTagName("p")[0].innerHTML=data.products[i].description.slice(0,30);
+            })
+
+        }
+        getData()
+    </script>
+</body>
+</html>

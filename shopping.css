@@ -1,0 +1,104 @@
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    color: rgb(0, 0, 0);
+    height:100vh ;
+    margin: 0;
+}
+
+.bar{
+    width: 100%;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.kf{
+    display: flex;
+    float: right;    
+}
+
+.navbar-brand{
+    font-weight: 300%;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+P{
+    font-weight: bolder;
+    padding-left: 8%;
+    padding-top: 8%;
+}
+
+.box{
+    padding: 1%;
+    height: auto;
+    width: 250px;
+    border: 2px solid lightslategray;
+    margin: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 2%;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.397) -4px 9px 25px -6px;
+}
+.Search{
+    background: linear-gradient(#e66465, #9198e5);
+}
+.Search:hover{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+  #button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+#button:disabled {
+  pointer-events: none;
+}
+
+#button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    height:100vh ;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-image: url(bhanu4.avif);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.card{
+    margin: 3%;
+    width: 20%;
+}
+
+#button1{
+    align-items: center;
+    appearance: none;
+    background-color: #000000;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgb(0, 4, 255) 0 2px 4px,rgb(0, 183, 255) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  #button1:focus {
+    box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+  }
+  
+  #button1:hover {
+      box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #button1:active {
+    box-shadow: #000000 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  #button2{
+    align-items: center;
+    appearance: none;
+    background-color: #000000;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgb(0, 4, 255) 0 2px 4px,rgb(0, 183, 255) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  #button2:focus {
+    box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+  }
+  
+  #button2:hover {
+      box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #button2:active {
+    box-shadow: #000000 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  #button3{
+    align-items: center;
+    appearance: none;
+    background-color: #000000;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgb(0, 4, 255) 0 2px 4px,rgb(0, 183, 255) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  #button3:focus {
+    box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+  }
+  
+  #button3:hover {
+      box-shadow: #000000 0 0 0 1.5px inset, rgba(0, 238, 255, 0.4) 0 2px 4px, rgba(145, 247, 150, 0.3) 0 7px 13px -3px, #e2ec57 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #button3:active {
+    box-shadow: #000000 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+      

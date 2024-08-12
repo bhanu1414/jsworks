@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debited</title>
+    <link rel="stylesheet" href="Debit.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h2>Debit</h2>
+            <input type="number"placeholder="Enter The Amount ₹"id="amount"/>
+            <p>Current Account Balance : ₹100000</p>
+            <button class="button">Debit</button>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector(".button");
+        btn.addEventListener("click", function() {
+            let y = prompt("Enter Your 4 digit Pin");
+            if (y === "1234") {
+                let x = document.getElementById("amount").value;
+                let xvalue = parseInt(x);
+                const z =  100000 - xvalue ;
+                if (xvalue <= 100000 ) {
+                    alert("Amount is Debited in Your Account\nYour Current Balance: ₹" + z);
+                } else {
+                    alert("Your Account Has Insufficient Balance");
+                }
+            } else if (y === "") {
+                alert("Please enter your PIN");
+            } else {
+                alert("Incorrect PIN. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
